@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+     <!-- bootstrap sheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- awesome font -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <!--css styling sheet-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!--navigation bar-->
+</head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
+        <span class="navbar-brand mb-0 mainTitle">Weather Dashboard</span>
+    </nav>
+
+    <!-- search for the city -->
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-3 searchColumn">
+                <form>
+                    <h3>Search for a City:</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+
+                        <div class="input-group-append">
+                        <!-- search -->
+                        <button type="submit" id="citySubmit" class="btn btn-primary fa fa-search"></button>
+                        <!-- Clear All Button -->
+                        <button id ="clear" class="btn btn-danger fa fa-trash"></button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- previoue searched city -->
+                <div id="previousSearch" class="btn-group-vertical"></div>
+            </div>
+    
+            <!-- the current weather information -->
+            <div class="col-md-9">
+                <div class="container" id="currentWeather">
+                    <h2>Current Weather Here</h2>
+                </div>
+            <div>
+        </div> 
+    
+        <!-- the five day forecast area -->
+        <h3>5-Day Forecast:</h3>
+        <div class="row" id="weatherForecast"></div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- the library for skycons imgs -->
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+    <!-- script.js added -->
+    <script src="./assets/java/script.js"></script>
+    <!-- moment.js added -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    </body>
+</html>
